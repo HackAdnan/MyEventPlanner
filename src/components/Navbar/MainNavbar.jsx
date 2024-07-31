@@ -14,17 +14,17 @@ const MainNavbar = () => {
     <>
      <header className="text-gray-400 bg-white body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link to="/">
+        <Link to="/landing">
           <img src={logo} height={200} width={200} alt="Product Logo" />
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link className="mr-5 hover:text-gray-900 text-gray-500" to="/myevents">
             My Events
           </Link>
-          <Link className="mr-5 hover:text-gray-900 text-gray-500" to="/events">
+          {/* <Link className="mr-5 hover:text-gray-900 text-gray-500" to="/landing">
             Find Events
-          </Link>
-          <Link className="mr-5 hover:text-gray-900 text-gray-500" to="/CreateEvent">
+          </Link> */}
+          <Link className="mr-5 hover:text-gray-900 text-gray-500" to="/createevent">
             Create Event
           </Link>
         </nav>
